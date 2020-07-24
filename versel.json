@@ -1,0 +1,16 @@
+{
+    "name": "JioSaavn-API",
+    "version": 1,
+    "builds": [
+        {
+            "src": "*.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "(.*)",
+            "dest": "app.py"
+        }
+    ]
+}
